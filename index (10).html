@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Holistic Life | Face &amp; Head Therapy</title>
+<meta name="description" content="Buccal face sculpting, head and scalp therapy and lymphatic drainage. Natural, holistic face and head therapy in the UK." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+<style>
+:root{--sage:#7A8C6D;--sand:#F7F3EF;--clay:#8B7355;--off:#FFFEFB;--char:#2E2E2E;--gold:#D4B896;--r:24px;--sh:0 18px 50px rgba(46,46,46,.08)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:Inter,sans-serif;background:var(--off);color:var(--char);line-height:1.7;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.logo{font-family:"Playfair Display",serif;font-weight:500;line-height:1.15}
+a{color:inherit;text-decoration:none}img{display:block;width:100%;height:100%;object-fit:cover}
+.img-fallback{width:100%;height:100%;background:linear-gradient(135deg,#c9d3bf,var(--sage) 60%,var(--clay))}
+:focus-visible{outline:2px solid var(--clay);outline-offset:3px}
+.hdr{position:fixed;top:14px;left:50%;transform:translateX(-50%);width:min(1160px,calc(100% - 28px));z-index:50;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 14px 12px 28px;border-radius:999px;background:rgba(255,254,251,.7);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.7);box-shadow:var(--sh)}
+.logo{font-size:1.5rem;color:var(--clay)}
+.hdr nav{display:flex;gap:28px;font-size:.92rem}.hdr nav a{color:#555;transition:color .3s}.hdr nav a:hover{color:var(--sage)}
+.burger{display:none;background:none;border:0;width:36px;height:36px;cursor:pointer}.burger span{display:block;height:2px;background:var(--char);margin:7px 6px}
+.btn{display:inline-block;padding:16px 34px;border-radius:999px;font-weight:500;font-size:.95rem;border:1px solid transparent;cursor:pointer;font-family:inherit;transition:transform .35s,box-shadow .35s,background .35s}
+.btn.sm{padding:10px 22px;font-size:.88rem}.btn.wide{width:100%;margin-top:6px}
+.btn.gold{background:var(--gold);color:var(--char);box-shadow:0 10px 26px rgba(212,184,150,.5)}
+.btn.gold:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(212,184,150,.65)}
+.btn.ghost{border-color:var(--sage);color:var(--sage)}.btn.ghost:hover{background:var(--sage);color:#fff}
+.hero{position:relative;min-height:100vh;display:grid;grid-template-columns:1.05fr 1fr;gap:70px;align-items:center;padding:140px max(24px,calc((100% - 1160px)/2)) 90px;background:linear-gradient(160deg,var(--sand),var(--off));overflow:hidden}
+.blob{position:absolute;border-radius:60% 40% 55% 45%;filter:blur(10px);opacity:.35;z-index:0}
+.b1{width:420px;height:420px;background:var(--sage);top:-120px;left:-140px}.b2{width:300px;height:300px;background:var(--gold);bottom:-80px;right:30%}
+.hero-copy,.hero-img{position:relative;z-index:1}
+.hero-copy>*{animation:rise 1s both}.hero-copy>*:nth-child(2){animation-delay:.12s}.hero-copy>*:nth-child(3){animation-delay:.24s}.hero-copy>*:nth-child(4){animation-delay:.36s}
+@keyframes rise{from{opacity:0;transform:translateY(26px)}}
+.kicker{color:var(--clay);font-size:.92rem;margin-bottom:22px;letter-spacing:.04em}
+h1{font-size:clamp(3rem,6.5vw,5.6rem);margin-bottom:26px}h1 em{color:var(--sage)}
+.lead{max-width:500px;font-size:1.1rem;color:#555;margin-bottom:38px}
+.ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-img{aspect-ratio:4/5;border-radius:220px 220px var(--r) var(--r);box-shadow:0 40px 90px rgba(46,46,46,.18);animation:rise 1.2s .2s both}
+.hero-img>img,.hero-img>.img-fallback{border-radius:inherit}
+.trust{position:absolute;left:-36px;bottom:44px;background:rgba(255,254,251,.85);backdrop-filter:blur(14px);padding:18px 26px;border-radius:var(--r);box-shadow:var(--sh);display:grid;gap:0;animation:float 6s ease-in-out infinite}
+.trust strong{font-family:"Playfair Display",serif;font-size:2rem;color:var(--clay);line-height:1.1}.trust span{font-size:.85rem}.trust a{font-size:.82rem;color:var(--sage)}
+@keyframes float{50%{transform:translateY(-10px)}}
+.sec{padding:140px max(24px,calc((100% - 1160px)/2))}
+.sand{background:var(--sand)}.sage{background:var(--sage);color:#fff}
+.head{text-align:center;max-width:640px;margin:0 auto 70px}
+h2{font-size:clamp(2rem,4vw,3.1rem);margin-bottom:18px}.head p{color:#666}.sage .head p{color:#eef}
+.head a{color:var(--clay);text-decoration:underline}
+.rv{opacity:0;transform:translateY(30px);transition:opacity .9s,transform .9s}.rv.in{opacity:1;transform:none}
+.about{display:grid;grid-template-columns:1fr 1.1fr;gap:90px;align-items:center}
+.about-img{aspect-ratio:4/5;border-radius:var(--r) 200px var(--r) var(--r);overflow:hidden;box-shadow:var(--sh)}
+.about p{margin-bottom:18px;color:#555}
+.ticks{list-style:none;margin-top:26px}.ticks li{padding-left:30px;margin-bottom:10px;position:relative}.ticks li:before{content:"✓";position:absolute;left:0;color:var(--sage);font-weight:600}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.card{background:var(--off);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);transition:opacity .9s,transform .5s,box-shadow .5s}
+.card.in:hover{transform:translateY(-10px);box-shadow:0 30px 70px rgba(46,46,46,.14)}
+.card-img{position:relative;aspect-ratio:4/3;overflow:hidden}.card-img img{transition:transform 1s}.card:hover .card-img img{transform:scale(1.06)}
+.ico{position:absolute;top:16px;left:16px;width:44px;height:44px;border-radius:50%;background:rgba(255,254,251,.9);display:grid;place-items:center;color:var(--sage);font-size:1.2rem}
+.card-body{padding:28px}.card h3{font-size:1.4rem;margin-bottom:14px}
+.card ul{list-style:none;margin-bottom:22px}.card li{font-size:.92rem;color:#666;padding-left:20px;position:relative}.card li:before{content:"•";position:absolute;left:4px;color:var(--gold)}
+.card-foot{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #eee;padding-top:18px}.price{font-family:"Playfair Display",serif;color:var(--clay)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;max-width:1000px;margin:auto}
+.step{text-align:center}.num{display:grid;place-items:center;width:64px;height:64px;margin:0 auto 22px;border-radius:50%;border:1px solid var(--gold);font-family:"Playfair Display",serif;font-size:1.5rem;color:var(--clay)}
+.step h3{font-size:1.4rem;margin-bottom:10px}.step p{color:#666}
+.bens{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+.ben{padding:30px 22px;border-radius:var(--r);background:rgba(255,255,255,.12);backdrop-filter:blur(6px)}.ben h3{font-size:1.2rem;margin-bottom:10px}.ben p{font-size:.9rem;opacity:.9}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:260px;gap:20px}
+.g{border-radius:var(--r);overflow:hidden;box-shadow:var(--sh)}.g0,.g5{grid-row:span 2}.g img{transition:transform 1s}.g:hover img{transform:scale(1.07)}
+.rev{background:var(--off);padding:38px;border-radius:var(--r);box-shadow:var(--sh)}
+.stars{color:var(--gold);letter-spacing:3px;margin-bottom:16px}.rev blockquote{font-family:"Playfair Display",serif;font-size:1.15rem;line-height:1.6;margin-bottom:20px}.rev figcaption{font-size:.9rem;color:#777}
+.book{display:grid;grid-template-columns:1.35fr 1fr;gap:50px;align-items:start}
+.form{background:var(--sand);padding:52px;border-radius:32px;box-shadow:var(--sh)}.sub{color:#666;margin-bottom:28px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+label{display:block;font-size:.85rem;color:#555;margin-bottom:18px}
+input,select,textarea{width:100%;margin-top:6px;padding:15px 18px;border:1px solid #e3ddd3;border-radius:16px;background:var(--off);font:inherit;color:var(--char);transition:border .3s,box-shadow .3s}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--sage);box-shadow:0 0 0 4px rgba(122,140,109,.18)}
+.ok{margin-top:14px;color:var(--sage);font-weight:500}
+.contact{background:var(--clay);color:#fff;padding:46px;border-radius:32px;display:grid;gap:16px}.contact h3{font-size:1.7rem}.contact a{border-bottom:1px solid rgba(255,255,255,.3);padding-bottom:12px}.contact a:hover{color:var(--gold)}
+footer{background:var(--char);color:#cfc9bf;text-align:center;padding:80px 24px 110px}footer .logo{color:var(--gold);margin-bottom:12px}.fine{font-size:.8rem;margin-top:22px;opacity:.6}
+.sticky-wa{display:none}
+@media(max-width:980px){
+.hdr nav{position:absolute;top:calc(100% + 10px);left:0;right:0;flex-direction:column;gap:0;background:var(--off);border-radius:var(--r);box-shadow:var(--sh);padding:10px 24px;display:none}.hdr nav.open{display:flex}.hdr nav a{padding:14px 0;border-bottom:1px solid #eee}
+.burger{display:block}.hdr{padding-left:22px}.hdr .btn{margin-left:auto}
+.hero,.about,.book{grid-template-columns:1fr;gap:50px}.hero{padding-top:120px}.trust{left:16px}
+.grid3,.steps{grid-template-columns:1fr}.bens{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:200px}.sec{padding:90px 24px}
+.form{padding:32px 24px}.row{grid-template-columns:1fr}
+.sticky-wa{display:block;position:fixed;left:16px;right:16px;bottom:16px;z-index:60;text-align:center;background:var(--gold);color:var(--char);padding:16px;border-radius:999px;font-weight:600;box-shadow:0 14px 34px rgba(46,46,46,.3)}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.24.7/babel.min.js"></script>
+<script type="text/babel">
+const { useState, useEffect } = React;
+
+const WA = "https://wa.me/447393606558";
+const IG = "https://www.instagram.com/h.olistic.life?igsh=MXBjcG94aHo4eGo4ZA==";
+const FB = "https://www.facebook.com/profile.php?id=61584588885666&mibextid=ZbWKwL";
+const u = (id, w = 900) => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=80`;
+
+// Demo imagery: swap each URL for the client's real photos. <Img> falls back to a sage gradient if a link ever fails.
+const IMG = {
+  hero: u("photo-1570172619644-dfd03ed5d881", 1200),
+  about: u("photo-1598440947619-2c35fc9aa908", 1000),
+  buccal: u("photo-1570172619644-dfd03ed5d881"),
+  scalp: u("photo-1519823551278-64ac92734fb1"),
+  lift: u("photo-1598440947619-2c35fc9aa908"),
+  lymph: u("photo-1596755389378-c31d21fd1273"),
+  jaw: u("photo-1544161515-4ab6ce6db874"),
+  ritual: u("photo-1540555700478-4be289fbecef"),
+  g: ["photo-1552693673-1bf958298935", "photo-1515377905703-c4788e51af15", "photo-1512290923902-8a9f81dc236c", "photo-1507652313519-d4e9174996dd", "photo-1570172619644-dfd03ed5d881", "photo-1598440947619-2c35fc9aa908"].map((i) => u(i, 700)),
+};
+
+const TREATMENTS = [
+  { n: "Buccal Face Sculpting", i: "◐", img: IMG.buccal, b: ["Lifts and defines cheekbones", "Releases deep facial muscle", "Softens fine lines naturally"] },
+  { n: "Head & Scalp Tension Release", i: "❋", img: IMG.scalp, b: ["Melts headache-prone tension", "Calms the nervous system", "Boosts scalp circulation"] },
+  { n: "Holistic Face Lift Massage", i: "✦", img: IMG.lift, b: ["Natural, non-invasive lifting", "Restores skin elasticity", "Leaves a visible glow"] },
+  { n: "Lymphatic Drainage Facial", i: "≈", img: IMG.lymph, b: ["Reduces puffiness and bloating", "Supports gentle detox", "Brightens a tired complexion"] },
+  { n: "Jaw & Face Tension Therapy", i: "◇", img: IMG.jaw, b: ["Eases jaw clenching and TMJ strain", "Relaxes screen-fatigue tension", "Softens an habitually tight face"] },
+  { n: "Deep Wellness Ritual", i: "☾", img: IMG.ritual, b: ["Face, head and scalp in one session", "Aromatic, grounding rituals", "Our most restorative treatment"] },
+];
+const BENEFITS = [["Natural Glow", "Boosted circulation brings radiance from within."], ["Releases Tension", "Let go of what your jaw, brow and scalp hold on to."], ["Better Sleep", "A calmed nervous system means deeper, easier rest."], ["Lymphatic Detox", "Gentle drainage to reduce puffiness and heaviness."], ["Holistic Healing", "Face and head cared for as one connected whole."]];
+const REVIEWS = [
+  ["I walked in with a tension headache I'd had for days and left feeling lighter than I have in years. My cheekbones looked lifted by the evening.", "Charlotte H.", "Surrey"],
+  ["Genuinely the most relaxing hour of my month. The buccal work is firm but so careful, and my jaw no longer aches by Friday.", "Amara O.", "London"],
+  ["My skin glowed for days and friends kept asking what I'd had done. Nothing invasive, just beautiful, skilled hands.", "Sophie B.", "Kent"],
+];
+const TIMES = ["09:00", "10:30", "12:00", "13:30", "15:00", "16:30", "18:00"];
+
+function Img({ src, alt, className = "" }) {
+  const [bad, setBad] = useState(false);
+  return bad ? <div className={`img-fallback ${className}`} role="img" aria-label={alt} /> : <img className={className} src={src} alt={alt} loading="lazy" onError={() => setBad(true)} />;
+}
+
+function useReveal() {
+  useEffect(() => {
+    const io = new IntersectionObserver((es) => es.forEach((e) => e.isIntersecting && (e.target.classList.add("in"), io.unobserve(e.target))), { threshold: 0.12 });
+    document.querySelectorAll(".rv").forEach((el) => io.observe(el));
+    return () => io.disconnect();
+  }, []);
+}
+
+function App() {
+  useReveal();
+  const [menu, setMenu] = useState(false);
+  const [sent, setSent] = useState(false);
+  const [f, setF] = useState({ name: "", phone: "", email: "", treatment: TREATMENTS[0].n, date: "", time: TIMES[0], message: "" });
+  const set = (k) => (e) => setF({ ...f, [k]: e.target.value });
+  const pick = (t) => { setF((p) => ({ ...p, treatment: t })); document.getElementById("book").scrollIntoView({ behavior: "smooth" }); };
+  const submit = (e) => {
+    e.preventDefault();
+    const msg = `Hi Holistic Life, I want to book ${f.treatment} on ${f.date} at ${f.time}.\nName: ${f.name}\nPhone: ${f.phone}\nEmail: ${f.email}${f.message ? `\nNote: ${f.message}` : ""}`;
+    window.open(`${WA}?text=${encodeURIComponent(msg)}`, "_blank", "noopener");
+    setSent(true);
+  };
+  const links = [["About", "about"], ["Treatments", "treatments"], ["Process", "process"], ["Gallery", "gallery"], ["Reviews", "reviews"], ["Contact", "book"]];
+
+  return (
+    <div className="app">
+      <header className="hdr">
+        <a href="#top" className="logo">Holistic Life</a>
+        <nav className={menu ? "open" : ""}>
+          {links.map(([l, id]) => <a key={id} href={`#${id}`} onClick={() => setMenu(false)}>{l}</a>)}
+        </nav>
+        <a className="btn gold sm" href={WA} target="_blank" rel="noreferrer">Book Now</a>
+        <button className="burger" aria-label="Menu" onClick={() => setMenu(!menu)}><span /><span /></button>
+      </header>
+
+      <section className="hero" id="top">
+        <div className="blob b1" /><div className="blob b2" />
+        <div className="hero-copy">
+          <p className="kicker">Face &amp; Head Therapy · United Kingdom</p>
+          <h1>Restore.<br />Rebalance.<br /><em>Renew.</em></h1>
+          <p className="lead">Natural, hands-on face and head therapy that releases held tension, encourages lymphatic flow and brings back your skin's own glow. No needles, no downtime, just skilled touch.</p>
+          <div className="ctas">
+            <a className="btn gold" href="#book">Book Your Treatment</a>
+            <a className="btn ghost" href="#treatments">View Treatments</a>
+          </div>
+        </div>
+        <div className="hero-img">
+          <Img src={IMG.hero} alt="Woman receiving a calming face therapy treatment" />
+          <div className="trust">
+            <strong>352+</strong><span>Happy Clients</span>
+            <a href={IG} target="_blank" rel="noreferrer">@h.olistic.life</a>
+          </div>
+        </div>
+      </section>
+
+      <section className="sec about" id="about">
+        <div className="about-img rv"><Img src={IMG.about} alt="Therapist hands performing a face massage" /></div>
+        <div className="rv">
+          <h2>The face and head hold everything you carry.</h2>
+          <p>Stress settles in the jaw, the brow and the scalp long before we notice it. At Holistic Life, every session treats the face and head as one connected system, because releasing tension in one place changes how the whole body feels.</p>
+          <p>Using buccal techniques, lymphatic movements and slow scalp work, we restore ease, circulation and a natural lift. It is wellness you can see in the mirror and feel in your shoulders.</p>
+          <ul className="ticks"><li>Gentle, non-invasive and natural</li><li>Tailored to your face and your day</li><li>Calm, private, unhurried appointments</li></ul>
+        </div>
+      </section>
+
+      <section className="sec sand" id="treatments">
+        <div className="head rv"><h2>Signature treatments</h2><p>Six considered therapies, each tailored to you. Pricing is confirmed after a short chat.</p></div>
+        <div className="grid3">
+          {TREATMENTS.map((t, i) => (
+            <article className="card rv" style={{ transitionDelay: `${(i % 3) * 90}ms` }} key={t.n}>
+              <div className="card-img"><Img src={t.img} alt={t.n} /><span className="ico">{t.i}</span></div>
+              <div className="card-body">
+                <h3>{t.n}</h3>
+                <ul>{t.b.map((x) => <li key={x}>{x}</li>)}</ul>
+                <div className="card-foot"><span className="price">From £POA</span><button className="btn gold sm" onClick={() => pick(t.n)}>Book</button></div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="sec" id="process">
+        <div className="head rv"><h2>Three simple steps to feeling renewed</h2></div>
+        <div className="steps">
+          {[["Choose", "Pick the treatment that suits how you feel today, or ask us to guide you."], ["Book on WhatsApp", "Send your preferred day and time. We reply personally and confirm."], ["Renew", "Arrive, exhale and let skilled hands do the rest."]].map(([t, d], i) => (
+            <div className="step rv" key={t}><span className="num">{i + 1}</span><h3>{t}</h3><p>{d}</p></div>
+          ))}
+        </div>
+      </section>
+
+      <section className="sec sage" id="benefits">
+        <div className="head rv"><h2>What your face and head will thank you for</h2></div>
+        <div className="bens">
+          {BENEFITS.map(([t, d]) => <div className="ben rv" key={t}><h3>{t}</h3><p>{d}</p></div>)}
+        </div>
+      </section>
+
+      <section className="sec" id="gallery">
+        <div className="head rv"><h2>Moments of calm</h2><p>Real work inspired by <a href={IG} target="_blank" rel="noreferrer">@h.olistic.life</a></p></div>
+        <div className="gallery">
+          {IMG.g.map((s, i) => <div className={`g rv g${i}`} key={i}><Img src={s} alt={`Holistic face therapy ${i + 1}`} /></div>)}
+        </div>
+      </section>
+
+      <section className="sec sand" id="reviews">
+        <div className="head rv"><h2>Kind words from our clients</h2></div>
+        <div className="grid3">
+          {REVIEWS.map(([q, n, l]) => (
+            <figure className="rev rv" key={n}>
+              <div className="stars" aria-label="5 stars">★★★★★</div>
+              <blockquote>{q}</blockquote>
+              <figcaption><strong>{n}</strong>, {l}</figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
+      <section className="sec book" id="book">
+        <form className="form rv" onSubmit={submit}>
+          <h2>Book your treatment</h2>
+          <p className="sub">Send your request and we'll confirm on WhatsApp.</p>
+          <div className="row">
+            <label>Name<input required value={f.name} onChange={set("name")} placeholder="Your full name" /></label>
+            <label>Phone<input required type="tel" value={f.phone} onChange={set("phone")} placeholder="+44 7…" /></label>
+          </div>
+          <label>Email<input type="email" value={f.email} onChange={set("email")} placeholder="you@email.com" /></label>
+          <label>Treatment<select value={f.treatment} onChange={set("treatment")}>{TREATMENTS.map((t) => <option key={t.n}>{t.n}</option>)}</select></label>
+          <div className="row">
+            <label>Date<input required type="date" value={f.date} onChange={set("date")} /></label>
+            <label>Time<select value={f.time} onChange={set("time")}>{TIMES.map((t) => <option key={t}>{t}</option>)}</select></label>
+          </div>
+          <label>Message<textarea rows="3" value={f.message} onChange={set("message")} placeholder="Anything we should know?" /></label>
+          <button className="btn gold wide" type="submit">Send via WhatsApp</button>
+          {sent && <p className="ok">WhatsApp opened with your request. Just press send to confirm.</p>}
+        </form>
+        <aside className="contact rv">
+          <h3>Visit &amp; contact</h3>
+          <a href="tel:+447393606558">+44 7393 606558</a>
+          <a href={IG} target="_blank" rel="noreferrer">Instagram: @h.olistic.life</a>
+          <a href={FB} target="_blank" rel="noreferrer">Facebook: Holistic Life</a>
+          <p>Monday to Saturday<br />Closed Sunday</p>
+          <p>Location: United Kingdom</p>
+        </aside>
+      </section>
+
+      <footer>
+        <div className="logo">Holistic Life</div>
+        <p>Face &amp; Head Therapy · Restore. Rebalance. Renew.</p>
+        <p className="fine">© {new Date().getFullYear()} Holistic Life. All rights reserved.</p>
+      </footer>
+
+      <a className="sticky-wa" href={WA} target="_blank" rel="noreferrer">Book on WhatsApp</a>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+</body>
+</html>
